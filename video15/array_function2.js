@@ -10,7 +10,7 @@ const dc_heroes = ["superman","flash","batman"]
 //const allHeros = marvel_heroes.concat(dc_heroes)
 //console.log(allHeros) //basically concat merge to give new array but push add the element in the existing array
 
-const all_new_heros =[...marvel_heroes,...dc_heroes]//now the elements of array have become individual and got spread in the new
+const all_new_heros =[...marvel_heroes,...dc_heroes]//now the elements of array have become individual and got spread in the new. this is called spread function 
 console.log(all_new_heros)
 
 const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
