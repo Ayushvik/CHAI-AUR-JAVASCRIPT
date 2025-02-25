@@ -51,3 +51,4 @@ const chai = () => {
 const addtwo =(num1,num2) => num1+num2
 //this is called implicit retrun
 console.log(addtwo(3,4))
+
