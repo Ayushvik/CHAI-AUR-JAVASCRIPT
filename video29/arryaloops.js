@@ -45,7 +45,7 @@ for (const key of Object.keys(person)) {
   //  console.log(`Key: ${key}, Value: ${person[key]}`);
 }
 //---------------------------------------------------------------------
-//for object generally ww use for in loop
+//for object generally we use for in loop
 const language = {
     js:'javascript',
     cpp:'c++',
@@ -56,12 +56,60 @@ const language = {
 for (const key in language) {
    {
         const element = language[key];
-        console.log(element)
+        // console.log(key)
+      //  console.log(`${key}: ${element}`)
         
     }
 }
 //----------------------------------------------------------------------
+//Using for in loop for arrays
+
+const programming = ["js","cpp","java","rb","swift"]
+for (const key in programming) {
+    //  console.log(`${key}: ${programming[key]}`)
+    
+}
+// we cann't directly iterate over map using for in loop
 
 
+//--------------------------for each loop-------------------------------
+const coding = ["js","cpp","java","python","ruby"]
+coding.forEach( function (val){
+   // console.log(val)
+})
+
+
+//for each with arrow function 
+coding.forEach( (val)=>{
+   // console.log(val)
+})
+
+//using a function inside for each loop
+function printme(item){
+   // console.log(item)
+}
+coding.forEach(printme)
+
+coding.forEach( (item,index,arr)=>{
+   // console.log(item,index,arr);
+})
+
+const myObject =[
+{languageNmae:"java",
+ languageFileName:"java"
+},
+{languageNmae:"javascript",
+ languageFileName:"js"
+},
+{languageNmae:"python",
+languageFileName:"py"
+}
+]
+
+myObject.forEach((val)=>{
+   // console.log(val)
+   //console.log(val.languageFileName)
+   //console.log(Object.keys(val))
+})
 
 
