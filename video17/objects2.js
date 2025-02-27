@@ -5,8 +5,8 @@ const regularUser = {
         lastName:"vishwakarma"
     }
 }
-console.log(regularUser)
-console.log(regularUser.fullname.firstName)
+//console.log(regularUser)
+//console.log(regularUser.fullname.firstName)
 const obj1 = {1:"a",2:"b"}
 const obj2 = {3:"c",4:"d"}
 const obj3 = {5:"e",6:"f"}
@@ -22,11 +22,11 @@ const tinderUser = {
     isLoggedIn:false
 }
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)) // it will return keys of the object in form of an array 
-console.log(Object.values(tinderUser))// same
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty('name'))// return object contain that particular property or not
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)) // it will return keys of the object in form of an array 
+// console.log(Object.values(tinderUser))// same
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty('name'))// return object contain that particular property or not
 
 const user = [
     {

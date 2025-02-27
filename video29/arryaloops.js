@@ -1,10 +1,10 @@
 // for of 
 
-// for of loop constains a =n interator and we have to mention where we have to apply this loop.Then it will automatically handle the size/increment/decrement/intial value.We cann't directly interate over objects usning for of loop
+// for of loop constains a =n interator and we have to mention where we have to apply this loop.Then it will automatically handle the size/increment/decrement/intial value.We cann't directly interate over objects using  for of loop
 
 const myArray = [23,12,45,56,34]
 for (const element of myArray) {
-   // console.log(element);
+   console.log(element);
 }
 
 const greet ="hello wolrd!"
@@ -29,20 +29,20 @@ map.set('FR',"France")
 //lets see how we can iterate over maps using loops
 
 for (const key of map) {
-   // console.log(key);
+  //  console.log(key);
     
 }
 // by this we will the values in the form of an array
 for (const [key,value] of map) {
-    // here we are destructing the value
-    //console.log(key,':',value);
+     //here we are destructing the value
+   // console.log(key,':',value);
     
 }
 //------------------we cann't directly iterate over object using [for of ] loop but we can iterate indirectly 
 const person = { name: "Ayush", age: 21, city: "Delhi" };
 
 for (const key of Object.keys(person)) {
-  //  console.log(`Key: ${key}, Value: ${person[key]}`);
+  // console.log(`Key: ${key}, Value: ${person[key]}`);
 }
 //---------------------------------------------------------------------
 //for object generally we use for in loop
@@ -56,8 +56,8 @@ const language = {
 for (const key in language) {
    {
         const element = language[key];
-        // console.log(key)
-      //  console.log(`${key}: ${element}`)
+       // console.log(key)
+       // console.log(`${key}: ${element}`)
         
     }
 }

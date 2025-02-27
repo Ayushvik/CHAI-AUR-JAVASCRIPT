@@ -1,4 +1,4 @@
-// metohs to create objects
+// methods to create objects
                                                                     
 //object.create// this method is a constructive method to create object which creates singleton 
 
@@ -10,16 +10,16 @@ const jsUser = {
     "full name":"ayush vishwakarma",
     [mySym]:"key1",//use of symbol in object
     age:22,
-    gender:Male,
+    gender:"Male",
     location:"pune",
     email:"ayushvik@gmail.com",
     lastLoginDays:["Monday","Saturday"]}
 
-console.log(jsUser.email)
-console.log(jsUser["email"])
-console.log(jsUser["full name"])
-console.log(jsUser[mySym])
-console.log(typeof jsUser[mySym])
+// console.log(jsUser.email)
+// console.log(jsUser["email"])
+// console.log(jsUser["full name"])
+// console.log(jsUser[mySym])
+// console.log(typeof jsUser[mySym])
 
 jsUser.email = "ayushvishwakrma2711@gmail.com"// this will change the value of email in the object
 

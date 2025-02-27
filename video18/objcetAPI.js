@@ -14,4 +14,4 @@ console.log(cn)
  "coursename":"chai aur javascript"}*/
 
  // some times we get API in form of an array like this
- [{},{},{}]
+ //[{},{},{}]

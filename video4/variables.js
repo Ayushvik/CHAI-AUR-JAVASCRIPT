@@ -1,5 +1,5 @@
 const accountId = 1234
-let accountEmail = "ayushvik@gmial.com" //{can be sed under scope}
+let accountEmail = "ayushvik@gmial.com" //{can be set under scope}
 var accountPassword ="23345353" //global variable
 accountCity ="Bengaluru"
 let accountState

@@ -18,7 +18,7 @@ let user1 {
     upi:"zyx@oksbi"
 }
 
-let user2 = user2
+let user2 = user1
 user2.email = "23123@gmail.com"
 
 In case of these non-primitive datatypes varaible(user1,user2) are stored in stack and the data is saved in heap.
