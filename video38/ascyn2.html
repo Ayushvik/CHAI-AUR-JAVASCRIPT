@@ -1,0 +1,47 @@
+
+//IS VIDEO KE ANDAR 2 PROJECTS BHI HAI
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur javascript</h1>
+    <button id = "start">start</button>
+    <button id = "stop">stop</button>
+</body>
+<script>
+    //------------------setInterval ki kahani-----------------
+//    const sayDate = function(){
+//    console.log("hitesh",Date.now())
+//    }
+//    setInterval(sayDate,2000)
+   // set interval har fixed interval ke baad perform hoga
+   //--------------------------------------------------------
+  // setInterval ke ander third parameter bhi hota hai 
+ // const sayDate = function(str){
+ // console.log(str,Date.now())
+ // }
+ // const intervalid =  setInterval(sayDate,2000,"hi")
+ //-- ab setInterval chalta hi jaeaga usko rokane ke liye kuch chahiye-------------------------------------------
+const chalu = function(){
+    console.log("hitesh",Date.now())
+}
+let interval;
+document.querySelector('#start').addEventListener('click',function (){
+    if(!interval){
+interval =  setInterval(chalu,2000)
+    }
+  
+})
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(interval)
+    interval = null
+})
+
+
+</script>
+</html>
