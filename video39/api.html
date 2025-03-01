@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      .card{
+        height: 600px;
+        width: 300px;
+        background-color: black;
+        position: absolute;
+        
+        
+      }
+      p{
+        position: relative;
+        color:aliceblue;
+        top:30px;
+        padding-left: 50px;
+        
+      }
+      #photo{
+        position: relative;
+       height: 300px;
+       width: 250px;
+       border:2px solid white;
+       /* background-color: blue; */
+       border-radius: 5px;
+       background-position: center;
+       top: 30px;
+       margin: auto;
+         }
+         #button{
+          position: relative;
+          top: 70px;
+          height: 40px;
+          width: 70px;
+          left: 40%;
+         }
+    </style>
+</head>
+<body>
+  
+<div class = "card">
+  <h1 style="color: aliceblue;">Choudhary bhai!!</h1>
+  <div id = "photo"></div>
+  <p></p>
+  <button id = "button">click</button>
+</div>
+
+    </body>
+    <script>
+        
+         const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+         const xhr =  new XMLHttpRequest()
+          //isse hum datareuest kar sakte hai aur le bhj sakte hai
+          xhr.open('GET',requestUrl)
+          let data;
+         xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState ===4){
+               console.log(this.responseText)
+                // jab hum 4th state m a jaenge toh hume response text mil jaeag basically wi will the data of the api
+                //----------------------------------------
+               // const data = this.response
+                //console.log(data.followers)
+                //ab yaha pe hume lag raha hai data ek object ke form m mila hai but jab hume data milte hai tab wo mostly string ke form m milta hai .
+               // console.log(typeof data)
+               //---------------------------------------------
+               //now we have to convert this strng data to JSON type object
+               data = JSON.parse(this.responseText)
+             //  console.log(typeof data)
+             console.log(data.followers)
+             const photo = document.querySelector('#photo')
+         const button = document.querySelector('#button')
+         const p = document.querySelector('p')
+         
+         button.addEventListener('click',function(){
+         
+         p.innerHTML = `follower count:${data.followers}`
+         photo.style.backgroundImage = `url(${data.avatar_url})`;
+         })
+            }
+         }
+          //this function will track the state of our request(xml)
+          xhr.send()
+         
+    </script>
+</body>
+</html>
+  <!-- 0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.
+     -->
