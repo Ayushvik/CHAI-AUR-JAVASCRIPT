@@ -42,7 +42,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## ⭐ Support This Project
+## ⭐ Support This Repository
 
 If this project helped you:
 
