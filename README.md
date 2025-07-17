@@ -38,7 +38,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - Content based on tutorials by **[Chai & Code](https://www.youtube.com/@chaicode)**
-- Code and structure by [your-name](https://github.com/your-username)
+- Code and structure by [Ayush vishwakarma](https://github.com/Ayushvik)
 
 ---
 
