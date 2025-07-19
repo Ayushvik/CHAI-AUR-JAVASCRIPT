@@ -15,9 +15,9 @@ console.log(1+2+"2")
 console.log(1+"2"+2)
 console.log("1"+2+2)
 
-/* in such cases the datatype of first element is prefered and the rest datatype follow them .ex datatype of 1 is string then of 2 becomes string.
-
-Similarly in ex.3 datatype of 1 is int,then int so they got added ,then string so 3+2 = 32*/ 
-
+/* in such case if the first value is String then the whole is refered as String .
+But if the first variable is a number and then after some time we get a String then
+values before String is treated as numbers and then rest all valiues are treadted as String
+*/
 console.log(+true)
 console.log(+"")
